@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    <style type="text/css">
+        #container {
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #D0D0D0;
+            box-shadow: 0 0 8px #D0D0D0;
+            width: 50%;
+        }
+    </style>
+    <title>List Buku</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">TAMBAH BUKU</a>
+    </nav>
+
+    <br />
+    <br />
+
+    <div style="margin-left: 5%">
+        <div id="container">
+            <form action="index.php" method="POST">
+                <div class="form-row">
+                    <div class="form-group col-md-2">
+                        <label for="tkode">Kode Buku</label>
+                        <select class="form-control" name="tkode" id="selectKode">
+                            <option>004F</option>
+                            <option>00NF</option>
+                            <option>00NS</option>
+                            <option>003S</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group col">
+                        <label for="tjudul">Judul Buku</label>
+                        <textarea class="form-control" name="tjudul" rows="3" required placeholder="Title"></textarea>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group col">
+                        <label for="tname">Penulis</label>
+                        <input type="text" name="tname" class="form-control" placeholder="Author">
+                    </div>
+                    <div class="form -group col">
+                        <label for="tthn">Tahun terbit</label>
+                        <input name="tthn" type="number" min="1990" max="2021" class="form-control">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="form-group col-md-6">
+                        <label for="tgenre">Genre</label>
+                        <div class="col-sm-4">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="tgenre" id="tgenre1" value="Nonfiksi" />
+                                <label class="form-check-label" for="tgenre1">Nonfiksi</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="tgenre" id="tgenre2" value="Fiksi" />
+                                <label class="form-check-label" for="tgenre2">Fiksi</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="tgenre" id="tgenre3" value="Sejarah" />
+                                <label class="form-check-label" for="tgenre3">Sejarah</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="tgenre" id="tgenre4" value="Novel" />
+                                <label class="form-check-label" for="tgenre4">Novel</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button type="submit" value="Submit" name="submit" class="btn btn-primary">Add</button>
+            </form>
+        </div>
+
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
